@@ -365,3 +365,7 @@ projects:
         - *module_if
         - *module_hic_lpc11u35
         - records/board/mtb_laird_bl652.yaml
+    lpc11u35_rohm_nrf52840_if:
+        - *module_if
+        - *module_hic_lpc11u35
+        - records/board/rohm_nrf52840.yaml
