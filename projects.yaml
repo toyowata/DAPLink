@@ -373,3 +373,7 @@ projects:
         - *module_if
         - *module_hic_lpc11u35
         - records/board/mtb_usi_wm_bn_bm_22.yaml
+    lpc11u35_enebular_stm32f767_if:
+        - *module_if
+        - *module_hic_lpc11u35
+        - records/board/enebular_stm32f767.yaml

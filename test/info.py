@@ -94,6 +94,7 @@ PROJECT_RELEASE_INFO = {
     ('lpc11u35_mtb_wise1570_if',                    False,      0x0000,     "bin"       ),
     ('lpc11u35_mtb_laird_bl652_if',                 False,      0x0000,     "bin"       ),
     ('lpc11u35_mtb_usi_wm_bn_bm_22_if',             False,      0x0000,     "bin"       ),
+    ('lpc11u35_enebular_stm32f767_if',              False,      0x0000,     "bin"       ),
 }
 
 # All supported configurations
@@ -179,6 +180,7 @@ SUPPORTED_CONFIGURATIONS = [
     (   0x1237,     'sam3u2c_ublox_evk_nina_b1_if',            'sam3u2c_bl',        'U-BLOX-EVK-NINA-B1'                    ),
     (   0xC006,     'lpc11u35_vbluno51_if',                     None,               'VBLUNO51'                              ),
     (   0xC005,     'lpc11u35_mtconnect04s_if',                 None,               'MtConnect04S'                          ),
+    (   0xC005,     'lpc11u35_enebular_stm32f767_if',           None,               None                          ),
 ]
 
 # Add new HICs here
