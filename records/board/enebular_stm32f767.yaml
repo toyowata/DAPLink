@@ -1,0 +1,7 @@
+common:
+    sources:
+        board:
+            - source/board/enebular_stm32f767.c
+        target:
+            - source/target/st/stm32f767/target.c
+            - source/target/st/target_reset.c
