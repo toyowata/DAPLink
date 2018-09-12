@@ -4,4 +4,4 @@ common:
             - source/board/enebular_stm32f767.c
         target:
             - source/target/st/stm32f767/target.c
-            - source/target/st/target_reset.c
+            - source/target/st/target_reset_stm32f7xx.c
