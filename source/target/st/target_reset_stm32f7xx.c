@@ -21,10 +21,15 @@
 
 #include "target_reset.h"
 #include "swd_host.h"
+#include "RTL.h"
+
 
 void target_before_init_debug(void)
 {
     swd_set_target_reset(1);
+	  os_dly_wait(2);
+    swd_set_target_reset(0);
+	  os_dly_wait(2);
 }
 
 uint8_t target_unlock_sequence(void)
