@@ -1,0 +1,6 @@
+common:
+    sources:
+        board:
+            - source/board/lpc11u35.c
+        family:
+            - source/family/nxp/lpc11u35/target.c
