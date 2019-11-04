@@ -52,11 +52,11 @@ COMPILER_ASSERT(DAPLINK_HIC_ID == DAPLINK_HIC_ID_LPC11U35);
 #define PIN_DAP_LED_IOCON               LPC_IOCON->PIO0_21
 #define PIN_DAP_LED_IOCON_INIT          (FUNC_0 | PULL_UP_ENABLED)
 
-// MSD LED                              PIO0_20
+// MSD LED                              PIO0_7
 #define PIN_MSD_LED_PORT                0
-#define PIN_MSD_LED_BIT                 20
+#define PIN_MSD_LED_BIT                 7
 #define PIN_MSD_LED                     (1 << PIN_MSD_LED_BIT)
-#define PIN_MSD_LED_IOCON               LPC_IOCON->PIO0_20
+#define PIN_MSD_LED_IOCON               LPC_IOCON->PIO0_7
 #define PIN_MSD_LED_IOCON_INIT          (FUNC_0 | PULL_UP_ENABLED)
 
 // CDC LED                              PIO0_11
@@ -73,11 +73,11 @@ COMPILER_ASSERT(DAPLINK_HIC_ID == DAPLINK_HIC_ID_LPC11U35);
 #define PIN_RESET_IN_IOCON              LPC_IOCON->PIO0_1
 #define PIN_RESET_IN_IOCON_INIT         (FUNC_0 | OPENDRAIN | PULL_UP_ENABLED)
 
-// Forwarded Reset in PIN               PIO1_19
-#define PIN_RESET_IN_FWRD_PORT          1
-#define PIN_RESET_IN_FWRD_BIT           19
+// Forwarded Reset in PIN               PIO0_1
+#define PIN_RESET_IN_FWRD_PORT          0
+#define PIN_RESET_IN_FWRD_BIT           1
 #define PIN_RESET_IN_FWRD               (1 << PIN_RESET_IN_FWRD_BIT)
-#define PIN_RESET_IN_FWRD_IOCON         LPC_IOCON->PIO1_19
+#define PIN_RESET_IN_FWRD_IOCON         LPC_IOCON->PIO0_1
 #define PIN_RESET_IN_FWRD_IOCON_INIT    (FUNC_0 | OPENDRAIN | PULL_UP_ENABLED)
 
 // nRESET OUT Pin                       PIO0_2
@@ -87,12 +87,12 @@ COMPILER_ASSERT(DAPLINK_HIC_ID == DAPLINK_HIC_ID_LPC11U35);
 #define PIN_nRESET_IOCON                LPC_IOCON->PIO0_2
 #define PIN_nRESET_IOCON_INIT           (FUNC_0 | OPENDRAIN | PULL_UP_ENABLED)
 
-// SWCLK/TCK Pin                        PIO0_7
+// SWCLK/TCK Pin                        PIO0_11
 #define PIN_SWCLK_PORT                  0
-#define PIN_SWCLK_BIT                   7
+#define PIN_SWCLK_BIT                   11
 #define PIN_SWCLK                       (1 << PIN_SWCLK_BIT)
-#define PIN_SWCLK_TCK_IOCON             LPC_IOCON->PIO0_7
-#define PIN_SWCLK_TCK_IOCON_INIT        (FUNC_0 | PULL_UP_ENABLED)
+#define PIN_SWCLK_TCK_IOCON             LPC_IOCON->TDI_PIO0_11
+#define PIN_SWCLK_TCK_IOCON_INIT        (FUNC_1 | PULL_UP_ENABLED)
 
 // SWDIO/TMS In/Out Pin                 PIO0_8
 #define PIN_SWDIO_PORT                  0

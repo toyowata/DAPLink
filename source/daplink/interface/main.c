@@ -89,7 +89,7 @@
 
 //default msc led settings
 #ifndef MSC_LED_DEF
-#define MSC_LED_DEF GPIO_LED_OFF
+#define MSC_LED_DEF GPIO_LED_ON
 #endif
 
 // Reference to our main task
